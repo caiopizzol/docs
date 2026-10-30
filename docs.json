@@ -1,0 +1,547 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "docs",
+  "colors": {
+    "primary": "#16A34A"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Introduction",
+        "pages": [
+          "AGENTS"
+        ]
+      },
+      {
+        "group": "Drift report",
+        "pages": [
+          "drift-report/drift-report"
+        ]
+      },
+      {
+        "group": "Scripts",
+        "pages": [
+          {
+            "group": "Templates",
+            "pages": [
+              "scripts/templates/api-key-provider-guide",
+              "scripts/templates/basic-auth-provider-guide",
+              "scripts/templates/client-credentials-provider-guide"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Src",
+        "pages": [
+          "src/ai-sdk",
+          "src/concepts",
+          "src/config-reference",
+          "src/dev-and-prod-environments",
+          "src/embeddable-ui-components",
+          "src/headless",
+          "src/manage-customer-schemas",
+          "src/manifest-reference",
+          "src/mcp-server",
+          "src/object-and-field-mapping",
+          "src/overview",
+          "src/proxy-actions",
+          "src/quickstart",
+          "src/read-actions",
+          "src/search-actions",
+          "src/starter-project",
+          "src/subscribe-actions",
+          "src/terminal-example",
+          "src/terminology",
+          "src/unified-api",
+          "src/use-with-ai-ide",
+          "src/write-actions",
+          {
+            "group": "Api",
+            "pages": [
+              "src/api/jwt-auth",
+              "src/api/key-auth",
+              "src/api/overview"
+            ]
+          },
+          {
+            "group": "Cli",
+            "pages": [
+              "src/cli/overview",
+              "src/cli/reference"
+            ]
+          },
+          {
+            "group": "Customer guides",
+            "pages": [
+              "src/customer-guides/bigquery",
+              "src/customer-guides/gong",
+              "src/customer-guides/google-workspace-delegation",
+              "src/customer-guides/housecallPro",
+              "src/customer-guides/hubspot",
+              "src/customer-guides/loxo",
+              "src/customer-guides/marketo",
+              "src/customer-guides/netsuite",
+              "src/customer-guides/overview",
+              "src/customer-guides/salesforce",
+              "src/customer-guides/salesforce-jwt",
+              "src/customer-guides/snowflake",
+              "src/customer-guides/update-connection",
+              "src/customer-guides/zoho"
+            ]
+          },
+          {
+            "group": "Destinations",
+            "pages": [
+              "src/destinations/azureservicebus",
+              "src/destinations/bigquery",
+              "src/destinations/clickhouse",
+              "src/destinations/kinesis",
+              "src/destinations/overview",
+              "src/destinations/pubsub",
+              "src/destinations/rabbitmq",
+              "src/destinations/redshift",
+              "src/destinations/s3",
+              "src/destinations/slack",
+              "src/destinations/snowflake",
+              "src/destinations/sqs",
+              "src/destinations/webhooks"
+            ]
+          },
+          {
+            "group": "Notifications",
+            "pages": [
+              "src/notifications/notification-payloads",
+              "src/notifications/overview"
+            ]
+          },
+          {
+            "group": "Provider guides",
+            "pages": [
+              "src/provider-guides/accuLynx",
+              "src/provider-guides/acuityScheduling",
+              "src/provider-guides/aha",
+              "src/provider-guides/aircall",
+              "src/provider-guides/airtable",
+              "src/provider-guides/amplemarket",
+              "src/provider-guides/amplitude",
+              "src/provider-guides/anthropic",
+              "src/provider-guides/apollo",
+              "src/provider-guides/asana",
+              "src/provider-guides/ashby",
+              "src/provider-guides/atlassian",
+              "src/provider-guides/attio",
+              "src/provider-guides/avoma",
+              "src/provider-guides/aweber",
+              "src/provider-guides/aws",
+              "src/provider-guides/basecamp",
+              "src/provider-guides/bentley",
+              "src/provider-guides/bigquery",
+              "src/provider-guides/bird",
+              "src/provider-guides/bitbucket",
+              "src/provider-guides/blackbaud",
+              "src/provider-guides/blueshift",
+              "src/provider-guides/blueshiftEU",
+              "src/provider-guides/box",
+              "src/provider-guides/braintree",
+              "src/provider-guides/braze",
+              "src/provider-guides/breakcold",
+              "src/provider-guides/breezy",
+              "src/provider-guides/brevo",
+              "src/provider-guides/bynder",
+              "src/provider-guides/calendly",
+              "src/provider-guides/callRail",
+              "src/provider-guides/campaignMonitor",
+              "src/provider-guides/capsule",
+              "src/provider-guides/chargebee",
+              "src/provider-guides/chargeOver",
+              "src/provider-guides/chartMogul",
+              "src/provider-guides/chilipiper",
+              "src/provider-guides/chorus",
+              "src/provider-guides/circleback",
+              "src/provider-guides/clari",
+              "src/provider-guides/clariCopilot",
+              "src/provider-guides/clarify",
+              "src/provider-guides/clickup",
+              "src/provider-guides/close",
+              "src/provider-guides/cloudtalk",
+              "src/provider-guides/coda",
+              "src/provider-guides/connectWise",
+              "src/provider-guides/constantContact",
+              "src/provider-guides/copper",
+              "src/provider-guides/coupa",
+              "src/provider-guides/crunchbase",
+              "src/provider-guides/customerJourneysApp",
+              "src/provider-guides/customerJourneysTrack",
+              "src/provider-guides/delighted",
+              "src/provider-guides/devrev",
+              "src/provider-guides/discord",
+              "src/provider-guides/discourse",
+              "src/provider-guides/dixa",
+              "src/provider-guides/docusign",
+              "src/provider-guides/domo",
+              "src/provider-guides/dovetail",
+              "src/provider-guides/drift",
+              "src/provider-guides/drip",
+              "src/provider-guides/dropbox",
+              "src/provider-guides/dropboxsign",
+              "src/provider-guides/dynamicsBusinessCentral",
+              "src/provider-guides/dynamicsCRM",
+              "src/provider-guides/emailBison",
+              "src/provider-guides/fathom",
+              "src/provider-guides/figma",
+              "src/provider-guides/fireflies",
+              "src/provider-guides/flatfile",
+              "src/provider-guides/formstack",
+              "src/provider-guides/fourFour",
+              "src/provider-guides/freshchat",
+              "src/provider-guides/freshdesk",
+              "src/provider-guides/front",
+              "src/provider-guides/g2",
+              "src/provider-guides/geckoboard",
+              "src/provider-guides/getResponse",
+              "src/provider-guides/github",
+              "src/provider-guides/gitlab",
+              "src/provider-guides/gong",
+              "src/provider-guides/google",
+              "src/provider-guides/google-workspace-delegation",
+              "src/provider-guides/gorgias",
+              "src/provider-guides/goTo",
+              "src/provider-guides/grain",
+              "src/provider-guides/granola",
+              "src/provider-guides/groove",
+              "src/provider-guides/guru",
+              "src/provider-guides/gusto",
+              "src/provider-guides/happyfox",
+              "src/provider-guides/helpScoutMailbox",
+              "src/provider-guides/heyreach",
+              "src/provider-guides/highlevel",
+              "src/provider-guides/hightouch",
+              "src/provider-guides/hive",
+              "src/provider-guides/housecallPro",
+              "src/provider-guides/hubspot",
+              "src/provider-guides/hunter",
+              "src/provider-guides/insightly",
+              "src/provider-guides/instantly",
+              "src/provider-guides/intercom",
+              "src/provider-guides/ironclad",
+              "src/provider-guides/iterable",
+              "src/provider-guides/jira",
+              "src/provider-guides/jobber",
+              "src/provider-guides/joinMe",
+              "src/provider-guides/jotform",
+              "src/provider-guides/jump",
+              "src/provider-guides/justCall",
+              "src/provider-guides/kaseyaVSAX",
+              "src/provider-guides/keap",
+              "src/provider-guides/kit",
+              "src/provider-guides/klaviyo",
+              "src/provider-guides/lemlist",
+              "src/provider-guides/lever",
+              "src/provider-guides/lightfield",
+              "src/provider-guides/linear",
+              "src/provider-guides/linkedin",
+              "src/provider-guides/livestorm",
+              "src/provider-guides/lob",
+              "src/provider-guides/loxo",
+              "src/provider-guides/mailgun",
+              "src/provider-guides/marketo",
+              "src/provider-guides/meta",
+              "src/provider-guides/microsoft",
+              "src/provider-guides/microsoftAdminConsent",
+              "src/provider-guides/miro",
+              "src/provider-guides/mixmax",
+              "src/provider-guides/mixpanel",
+              "src/provider-guides/monaco",
+              "src/provider-guides/monday",
+              "src/provider-guides/mural",
+              "src/provider-guides/netsuite",
+              "src/provider-guides/netsuite-m2m",
+              "src/provider-guides/notion",
+              "src/provider-guides/nutshell",
+              "src/provider-guides/odoo",
+              "src/provider-guides/okta",
+              "src/provider-guides/openAI",
+              "src/provider-guides/orb",
+              "src/provider-guides/outplay",
+              "src/provider-guides/outreach",
+              "src/provider-guides/overview",
+              "src/provider-guides/paddle",
+              "src/provider-guides/paddleSandbox",
+              "src/provider-guides/phoneBurner",
+              "src/provider-guides/pinterest",
+              "src/provider-guides/pipedrive",
+              "src/provider-guides/pipeliner",
+              "src/provider-guides/podium",
+              "src/provider-guides/procore",
+              "src/provider-guides/productBoard",
+              "src/provider-guides/pylon",
+              "src/provider-guides/quickbooks",
+              "src/provider-guides/ramp",
+              "src/provider-guides/rebilly",
+              "src/provider-guides/recurly",
+              "src/provider-guides/reply",
+              "src/provider-guides/revenuecat",
+              "src/provider-guides/ringCentral",
+              "src/provider-guides/sageIntacct",
+              "src/provider-guides/salesfinity",
+              "src/provider-guides/salesflare",
+              "src/provider-guides/salesforce",
+              "src/provider-guides/salesforce-jwt",
+              "src/provider-guides/salesloft",
+              "src/provider-guides/segment",
+              "src/provider-guides/seismic",
+              "src/provider-guides/sellsy",
+              "src/provider-guides/sendGrid",
+              "src/provider-guides/serviceNow",
+              "src/provider-guides/shopify",
+              "src/provider-guides/slack",
+              "src/provider-guides/smartlead",
+              "src/provider-guides/smartsheet",
+              "src/provider-guides/snapchatAds",
+              "src/provider-guides/snowflake",
+              "src/provider-guides/solarwindsServiceDesk",
+              "src/provider-guides/square",
+              "src/provider-guides/stripe",
+              "src/provider-guides/superSend",
+              "src/provider-guides/surveyMonkey",
+              "src/provider-guides/talkdesk",
+              "src/provider-guides/teamleader",
+              "src/provider-guides/teamwork",
+              "src/provider-guides/timely",
+              "src/provider-guides/tipalti",
+              "src/provider-guides/vtiger",
+              "src/provider-guides/wealthbox",
+              "src/provider-guides/webex",
+              "src/provider-guides/webflow",
+              "src/provider-guides/whereby",
+              "src/provider-guides/wordpress",
+              "src/provider-guides/workday",
+              "src/provider-guides/wrike",
+              "src/provider-guides/xero",
+              "src/provider-guides/zendeskSupport",
+              "src/provider-guides/zoho",
+              "src/provider-guides/zoom",
+              "src/provider-guides/zoominfo"
+            ]
+          },
+          {
+            "group": "Reference",
+            "pages": [
+              {
+                "group": "Api key",
+                "pages": [
+                  "src/reference/api-key/create-a-new-api-key",
+                  "src/reference/api-key/delete-an-api-key",
+                  "src/reference/api-key/get-an-api-key",
+                  "src/reference/api-key/list-api-keys",
+                  "src/reference/api-key/update-an-api-key"
+                ]
+              },
+              {
+                "group": "Billing account",
+                "pages": [
+                  "src/reference/billing-account/create-a-portal-session-for-a-billing-account",
+                  "src/reference/billing-account/get-the-billing-account-for-an-organization"
+                ]
+              },
+              {
+                "group": "Connection",
+                "pages": [
+                  "src/reference/connection/delete-a-connection",
+                  "src/reference/connection/generate-a-new-connection",
+                  "src/reference/connection/get-a-connection",
+                  "src/reference/connection/list-connections",
+                  "src/reference/connection/start-or-continue-a-multi-step-custom-auth-flow",
+                  "src/reference/connection/update-a-connection"
+                ]
+              },
+              {
+                "group": "Destination",
+                "pages": [
+                  "src/reference/destination/create-a-new-destination",
+                  "src/reference/destination/create-a-topic",
+                  "src/reference/destination/create-a-topic-destination-route",
+                  "src/reference/destination/delete-a-destination",
+                  "src/reference/destination/delete-a-topic",
+                  "src/reference/destination/delete-a-topic-destination-route",
+                  "src/reference/destination/get-a-destination",
+                  "src/reference/destination/list-destinations",
+                  "src/reference/destination/list-topic-destination-routes",
+                  "src/reference/destination/list-topics",
+                  "src/reference/destination/update-a-destination",
+                  "src/reference/destination/update-a-topic"
+                ]
+              },
+              {
+                "group": "Installation",
+                "pages": [
+                  "src/reference/installation/create-a-new-installation",
+                  "src/reference/installation/delete-an-installation",
+                  "src/reference/installation/get-an-installation",
+                  "src/reference/installation/list-installations-for-a-project",
+                  "src/reference/installation/list-installations-for-an-integration",
+                  "src/reference/installation/update-an-installation",
+                  "src/reference/installation/update-an-installation-object"
+                ]
+              },
+              {
+                "group": "Integration",
+                "pages": [
+                  "src/reference/integration/batch-upsert-a-group-of-integrations",
+                  "src/reference/integration/create-a-new-integration",
+                  "src/reference/integration/delete-an-integration",
+                  "src/reference/integration/get-an-integration-by-id-or-name",
+                  "src/reference/integration/list-integrations"
+                ]
+              },
+              {
+                "group": "Jwt key",
+                "pages": [
+                  "src/reference/jwt-key/create-a-new-jwt-key",
+                  "src/reference/jwt-key/delete-a-jwt-key",
+                  "src/reference/jwt-key/get-a-specific-jwt-key",
+                  "src/reference/jwt-key/list-jwt-keys",
+                  "src/reference/jwt-key/update-a-jwt-key"
+                ]
+              },
+              {
+                "group": "Notification",
+                "pages": [
+                  "src/reference/notification/create-a-notification-event-topic-route",
+                  "src/reference/notification/delete-a-notification-event-topic-route",
+                  "src/reference/notification/list-notification-event-topic-routes"
+                ]
+              },
+              {
+                "group": "Oauth",
+                "pages": [
+                  "src/reference/oauth/generate-oauth-authorization-url",
+                  "src/reference/oauth/generate-oauth-authorization-url-for-existing-connection"
+                ]
+              },
+              {
+                "group": "Objects & fields",
+                "pages": [
+                  "src/reference/objects-&-fields/get-object-metadata-via-connection",
+                  "src/reference/objects-&-fields/get-object-metadata-via-installation",
+                  "src/reference/objects-&-fields/upsert-custom-fields-for-connection",
+                  "src/reference/objects-&-fields/upsert-custom-fields-for-installation"
+                ]
+              },
+              {
+                "group": "Operation",
+                "pages": [
+                  "src/reference/operation/get-an-operation",
+                  "src/reference/operation/get-backfill-progress",
+                  "src/reference/operation/list-logs-for-an-operation",
+                  "src/reference/operation/list-operations"
+                ]
+              },
+              {
+                "group": "Org",
+                "pages": [
+                  "src/reference/org/add-user-to-an-organization",
+                  "src/reference/org/check-if-a-domain-is-claimed",
+                  "src/reference/org/claim-a-domain",
+                  "src/reference/org/create-a-new-organization",
+                  "src/reference/org/get-an-invite",
+                  "src/reference/org/get-an-organization",
+                  "src/reference/org/invite-a-user-to-an-organization",
+                  "src/reference/org/list-builders-for-an-organization",
+                  "src/reference/org/list-invites-for-an-organization",
+                  "src/reference/org/list-organizations-claimed-domains",
+                  "src/reference/org/revoke-an-invite",
+                  "src/reference/org/update-an-organization"
+                ]
+              },
+              {
+                "group": "Project",
+                "pages": [
+                  "src/reference/project/create-a-new-project",
+                  "src/reference/project/get-a-project",
+                  "src/reference/project/list-projects",
+                  "src/reference/project/update-a-project"
+                ]
+              },
+              {
+                "group": "Provider",
+                "pages": [
+                  "src/reference/provider/get-provider",
+                  "src/reference/provider/list-providers"
+                ]
+              },
+              {
+                "group": "Provider app",
+                "pages": [
+                  "src/reference/provider-app/create-a-new-provider-app",
+                  "src/reference/provider-app/delete-a-provider-app",
+                  "src/reference/provider-app/list-provider-apps",
+                  "src/reference/provider-app/update-a-provider-app"
+                ]
+              },
+              {
+                "group": "Read",
+                "pages": [
+                  "src/reference/read/deliver-results",
+                  "src/reference/read/pause-reads-for-an-installation",
+                  "src/reference/read/trigger-a-read",
+                  "src/reference/read/unpause-reads-for-an-installation"
+                ]
+              },
+              {
+                "group": "Revision",
+                "pages": [
+                  "src/reference/revision/create-a-new-revision",
+                  "src/reference/revision/get-a-hydrated-revision"
+                ]
+              },
+              {
+                "group": "Search",
+                "pages": [
+                  "src/reference/search/search-records"
+                ]
+              },
+              {
+                "group": "Upload url",
+                "pages": [
+                  "src/reference/upload-url/generate-a-signed-url-to-upload-a-zip-file-to"
+                ]
+              },
+              {
+                "group": "User",
+                "pages": [
+                  "src/reference/user/accept-an-invite",
+                  "src/reference/user/get-information-about-the-current-user"
+                ]
+              },
+              {
+                "group": "Write",
+                "pages": [
+                  "src/reference/write/write-records"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Security",
+            "pages": [
+              "src/security/outgoing-ip-addresses"
+            ]
+          },
+          {
+            "group": "Troubleshooting guides",
+            "pages": [
+              "src/troubleshooting-guides/general",
+              "src/troubleshooting-guides/google",
+              "src/troubleshooting-guides/microsoft-dynamics",
+              "src/troubleshooting-guides/overview",
+              "src/troubleshooting-guides/salesforce"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
