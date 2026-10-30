@@ -50,7 +50,19 @@ Needs `op` (1Password CLI) and `tesseract`.
    - `expect`: an element that must appear after the step, so a changed UI fails the run.
 
 4. **Hide anything private.** At the top level of the flow:
-   - `mask`: selectors (CSS or `xpath=`) for secrets, emails, account names and avatars, covered before every screenshot. Providers often repeat credentials elsewhere, such as a side menu.
+   - `mask`: selectors (CSS or `xpath=`) covered before every screenshot. Cover secrets, emails, avatars, account and user names (including greetings such as "Welcome, Alex"), and other apps' names in lists, which can reveal customers. Providers often repeat credentials elsewhere, such as a side menu.
    - `secrets`: selectors of inputs holding a secret, such as the Client ID. After rendering, `record.ts` searches every frame for their values and deletes the video if one shows.
+   - `dismiss`: selectors of popups, such as upgrade offers or surveys, to close before each step when they appear.
 
-5. Record with the `record.ts` command above, using the provider's session and flow. If the guide's steps no longer match the site, fix the guide.
+5. **Record:**
+
+   ```sh
+   AGENT_BROWSER_SESSION=<session> npx tsx .claude/skills/recording-provider-guides/record.ts \
+     .claude/skills/recording-provider-guides/flows/<catalogKey>-<part>.json \
+     src/images/provider-guides/<catalogKey>-app-<part>.mp4 \
+     appId=<app ID>
+   ```
+
+   Then add each video under the last guide step it shows, with the same `<video>` tag as above.
+
+If a guide step can no longer be done, for example because the provider removed a feature, check the provider's changelog, then stop and ask before rewriting or removing that part of the guide. If the steps only moved or were renamed, fix the guide.

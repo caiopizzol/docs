@@ -32,6 +32,8 @@ const flow: {
   mask?: string[];
   // Inputs whose values must not appear in any frame, checked after rendering.
   secrets?: string[];
+  // Popups (promos, surveys) to click away before each step, when present.
+  dismiss?: string[];
   steps: Step[];
 } = JSON.parse(
   readFileSync(flowPath, 'utf8').replace(/\{\{(\w+)\}\}/g, (_, k) => {
@@ -88,7 +90,19 @@ settle();
 const secrets: string[] = (flow.secrets ?? [])
   .map((s) => ab('eval', `document.querySelector(${JSON.stringify(s)})?.value ?? ''`).result)
   .filter((v: string) => v.length >= 10);
+function dismissPopups() {
+  for (const d of flow.dismiss ?? []) {
+    try {
+      ab('click', d);
+      settle();
+    } catch {
+      // Not showing this time.
+    }
+  }
+}
+
 const shots = flow.steps.map((step, i) => {
+  dismissPopups();
   boxOf(step.target);
   ab('scrollintoview', step.target);
   settle();
